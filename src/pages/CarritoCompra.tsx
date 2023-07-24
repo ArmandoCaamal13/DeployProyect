@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState, useEffect } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 import '../assets/css/CarritoCompras.css';
 import { Product } from '../interfaces/product';
 import { PayPalButtons } from "@paypal/react-paypal-js";
@@ -64,6 +64,7 @@ const CarritoCompra = () => {
     return (
       <PayPalButtons 
         createOrder={(data, actions) => {
+          console.log(data)
           return actions.order.create({
             purchase_units: [
               {
@@ -76,6 +77,7 @@ const CarritoCompra = () => {
           });
         }}
         onApprove={async (data, actions) => {
+          console.log(data)
           const order = await actions.order?.capture();
           console.log("order", order);
           

@@ -24,7 +24,8 @@ export default function CardsProducts() {
         []
     );
 
-    const [isLoggedIn, setLoggedIn] = useState(localStorage.getItem('user') ? true : false);
+    const [isLoggedIn] = useState(localStorage.getItem('user') ? true : false);
+    
 
     useEffect(() => {
         async function getData() {

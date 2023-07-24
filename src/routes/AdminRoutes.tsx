@@ -50,10 +50,6 @@ const AdminRoutes = () => {
                         path="/categoria/agregar"
                         element={<adminPages.AgregarCategoria />}
                     />
-                    <Route
-                        path="/ventas"
-                        element={<adminPages.Ventas />}
-                    />
                     <Route path="/404" element={<pages.NotFound />} />
                     <Route
                         path="*"
