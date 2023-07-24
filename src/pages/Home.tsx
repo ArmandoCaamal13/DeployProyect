@@ -12,7 +12,7 @@ const Home = () => {
     <div className='col-lg-12'>
       <header>
         <div className="banner">
-          <img src="\img\Banner.png" alt="" />
+        <img src="https://i.ibb.co/wKhRVNd/Banner.png" alt="" />
           <div className="banner-text">
             <h1>Tech eCommerce</h1>
             <p>Tecnologia de alto rendimiento</p>

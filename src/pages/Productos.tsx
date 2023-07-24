@@ -12,7 +12,7 @@ const Productos = () => {
         <div>
             <div className="products">
                 <div>
-                <img src="https://gdurl.com/mLU0" alt="" />
+                <img src="https://i.ibb.co/zbChdgg/Rectangulo.png" alt="" />
                 </div>
                 <div className="container mt-5">
                     <div className="search">
